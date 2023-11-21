@@ -13,7 +13,7 @@ class Main:
         dt = 0.01
         signal = sin(2 * pi * 5 * n * dt) + sin(2 * pi * 20 * n * dt)
         ButterworthFilter(signal=signal, x=n, mode="L", dt=dt, freq_1=10)
-        ButterworthFilter(signal=signal, x=n, mode="H", dt=dt, freq_1=10, freq_2=10)
+        ButterworthFilter(signal=signal, x=n, mode="H", dt=dt, freq_1=10)
 
         signal = sin(2 * pi * 5 * n * dt) + sin(2 * pi * 20 * n * dt) + sin(
             2 * pi * 35 * n * dt)
